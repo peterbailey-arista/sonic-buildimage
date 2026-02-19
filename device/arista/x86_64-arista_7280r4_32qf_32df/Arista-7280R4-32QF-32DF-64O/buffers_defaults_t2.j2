@@ -4,8 +4,8 @@
         'torrouter_server'       : '300m',
         'leafrouter_torrouter'   : '300m',
         'spinerouter_leafrouter' : '2000m',
-        'upperspinerouter_spinerouter' : '30m',
-        'upperspinerouter_lowerspinerouter' : '30m',
+        'upperspinerouter_spinerouter' : '50m',
+        'upperspinerouter_lowerspinerouter' : '50m',
         'regionalhub_upperspinerouter': '120000m',
         'aznghub_upperspinerouter'    : '120000m',
         'regionalhub_spinerouter': '120000m',
@@ -29,10 +29,10 @@
 {%- macro generate_buffer_pool_and_profiles() %}
     "BUFFER_POOL": {
         "ingress_lossless_pool": {
-            "size": "12884901888",
+            "size": "25766440000",
             "type": "both",
             "mode": "dynamic",
-            "xoff": "3225378816"
+            "xoff": "2863254732"
         }
     },
     "BUFFER_PROFILE": {
